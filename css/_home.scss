@@ -256,7 +256,7 @@
           background-color: white;
           width: 5px;
           height: 100%;
-          animation: myAni 3s ease infinite;
+          animation: myAni 3s ease-in-out infinite;
         }
       }
     }
@@ -280,34 +280,32 @@
         color: white;
         border-radius: 50%;
         padding: 1px;
-      
       }
       &.next {
         right: 0px;
         transition: 0.5s ease-in-out;
-        i{
+        i {
           transition: 0.3s ease-in-out;
-          &:hover{
+          &:hover {
             background-color: white;
             color: #0dbcc0;
             border-radius: 50%;
-          padding: 1px;
-          
+            padding: 1px;
           }
         }
       }
       &.prev {
         left: 0;
-       
+
         transition: 0.5s ease-in-out;
-        i{
+        i {
           transition: 0.3s ease-in-out;
-        
-          &:hover{
+
+          &:hover {
             background-color: white;
             color: #0dbcc0;
             border-radius: 50%;
-          padding: 1px;
+            padding: 1px;
           }
         }
       }
@@ -317,7 +315,6 @@
       .prev {
         i {
           display: block;
-         
         }
       }
       .prev {
@@ -348,10 +345,8 @@
           color: #0673b9;
           transition: 0.4s ease-in-out;
           &:hover {
-            
-              background-color: #0fbec2;
-              color: white;
-            
+            background-color: #0fbec2;
+            color: white;
           }
         }
         h3 {
@@ -367,9 +362,155 @@
             text-decoration: none;
           }
         }
-
-       
       }
     }
   }
+}
+// doctor_categories ended
+// ==============================
+// certificate starts
+#certificate {
+  padding: 50px;
+  .boxes {
+
+    .imgBox {
+      overflow: hidden;
+
+      position: relative;
+      height: 100vh;
+      width: 50%;
+      .girl {
+        max-width: 100%;
+      height: auto;
+        position: absolute;
+        bottom: 0;
+        z-index: 9;
+       
+      }
+      .boy{
+       right: 0;
+        max-width: 100%;
+        height: auto;
+          position: absolute;
+        border-radius: 10px;
+          // width: 70%;
+          z-index: 6;
+          
+      }
+      .shapeBox{
+        .shape1{
+          
+          margin: 10% auto;
+          max-width: 100%;
+        height: auto;
+          position: absolute;
+          z-index: 3;
+          animation: shape1Ani 3s linear infinite alternate;
+          
+          
+        }
+        .shape2{
+          // margin: 10% auto;
+          position: absolute;
+          max-width: 100%;
+        height: auto;
+          right: 0;
+          bottom: 0;
+          z-index: 3;
+          animation: shape2Ani 3s linear infinite alternate;
+          
+          
+        }
+        @keyframes shape1Ani {
+          0% {
+            left: 40px;
+          }
+          100% {
+            left: 80px;
+          }
+        }
+        @keyframes shape2Ani {
+          0% {
+            top:20%;
+          }
+          100% {
+            top:50% ;
+          }
+        }
+
+      }
+    }
+    .about-content{
+      padding-left: 5%;
+      margin-top: 30px;
+      h3{
+        font-size: 35px;
+        color: #202647;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+      }
+      .animation_line {
+        margin: 20px 0;
+        position: relative;
+        width: 100px;
+        background-color: #0fbcc0;
+        height: 5px;
+        border-radius: 5px;
+        .whiteBox {
+          position: absolute;
+          background-color: white;
+          width: 5px;
+          height: 100%;
+          animation: myAni 3s ease-in-out infinite;
+        }
+      }
+      p{
+        color:#6b6b84;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+      }
+      .ulli{
+        ul{
+          margin: 0;
+          padding: 0;
+          li{
+            // margin-left: 0;
+            list-style: none;
+            font-size: 16px;
+            color: #202647;
+            font-weight: 500;
+            &:hover{
+              i{
+                background-color:#0FBCC0 ;
+                color:white;
+              }
+            }
+            i{
+              transition: 0.5s ease-in-out;
+              background-color: #DAFAFC;
+              color: #7BD6D9;
+              padding: 10px;
+              margin: 20px 10px 0 0;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      a{
+        text-decoration: none;
+        background-color: #0FBCC0;
+        padding: 18px 35px;
+        border-radius: 10px ;
+        font-weight: 500;
+      color: white;
+      display: inline-block;
+      margin-top: 30px;
+      transition: 0.5s ease-in-out;
+      &:hover{
+        background-color: #0474B9;
+      }
+      }
+    }
+  }
+
 }

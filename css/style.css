@@ -230,7 +230,7 @@
   background-color: white;
   width: 5px;
   height: 100%;
-  animation: myAni 3s ease infinite;
+  animation: myAni 3s ease-in-out infinite;
 }
 #doctor_categories .slider {
   width: 95%;
@@ -331,4 +331,128 @@
   color: #202647;
   font-size: 20px;
   text-decoration: none;
+}
+
+#certificate {
+  padding: 50px;
+}
+#certificate .boxes .imgBox {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 50%;
+}
+#certificate .boxes .imgBox .girl {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+}
+#certificate .boxes .imgBox .boy {
+  right: 0;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 6;
+}
+#certificate .boxes .imgBox .shapeBox .shape1 {
+  margin: 10% auto;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  animation: shape1Ani 3s linear infinite alternate;
+}
+#certificate .boxes .imgBox .shapeBox .shape2 {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  animation: shape2Ani 3s linear infinite alternate;
+}
+@keyframes shape1Ani {
+  0% {
+    left: 40px;
+  }
+  100% {
+    left: 80px;
+  }
+}
+@keyframes shape2Ani {
+  0% {
+    top: 20%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+#certificate .boxes .about-content {
+  padding-left: 5%;
+  margin-top: 30px;
+}
+#certificate .boxes .about-content h3 {
+  font-size: 35px;
+  color: #202647;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+#certificate .boxes .about-content .animation_line {
+  margin: 20px 0;
+  position: relative;
+  width: 100px;
+  background-color: #0fbcc0;
+  height: 5px;
+  border-radius: 5px;
+}
+#certificate .boxes .about-content .animation_line .whiteBox {
+  position: absolute;
+  background-color: white;
+  width: 5px;
+  height: 100%;
+  animation: myAni 3s ease-in-out infinite;
+}
+#certificate .boxes .about-content p {
+  color: #6b6b84;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+#certificate .boxes .about-content .ulli ul {
+  margin: 0;
+  padding: 0;
+}
+#certificate .boxes .about-content .ulli ul li {
+  list-style: none;
+  font-size: 16px;
+  color: #202647;
+  font-weight: 500;
+}
+#certificate .boxes .about-content .ulli ul li:hover i {
+  background-color: #0FBCC0;
+  color: white;
+}
+#certificate .boxes .about-content .ulli ul li i {
+  transition: 0.5s ease-in-out;
+  background-color: #DAFAFC;
+  color: #7BD6D9;
+  padding: 10px;
+  margin: 20px 10px 0 0;
+  border-radius: 50%;
+}
+#certificate .boxes .about-content a {
+  text-decoration: none;
+  background-color: #0FBCC0;
+  padding: 18px 35px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: white;
+  display: inline-block;
+  margin-top: 30px;
+  transition: 0.5s ease-in-out;
+}
+#certificate .boxes .about-content a:hover {
+  background-color: #0474B9;
 }/*# sourceMappingURL=style.css.map */
