@@ -65,7 +65,7 @@
 }
 #search_location .boxes .formBox .firstInput input {
   width: 100%;
-  padding: 10px 15px;
+  padding: 10px 10px 10px 45px;
   height: 50%;
   border-radius: 10px;
   height: 55px;
@@ -73,12 +73,6 @@
   border: none;
   outline: none;
   margin-top: 5px;
-}
-#search_location .boxes .formBox .firstInput input::-moz-placeholder {
-  padding-left: 20px;
-}
-#search_location .boxes .formBox .firstInput input::placeholder {
-  padding-left: 20px;
 }
 #search_location .boxes .formBox .secondInput {
   position: relative;
@@ -94,23 +88,17 @@
 }
 #search_location .boxes .formBox .secondInput input {
   width: 100%;
-  padding: 10px 15px;
+  padding: 10px 10px 10px 45px;
   border-radius: 10px;
   height: 55px;
   border: none;
   outline: none;
   margin-top: 5px;
 }
-#search_location .boxes .formBox .secondInput input::-moz-placeholder {
-  padding-left: 20px;
-}
-#search_location .boxes .formBox .secondInput input::placeholder {
-  padding-left: 20px;
-}
 #search_location .boxes .formBox .secondInput .search {
   position: absolute;
   right: 5%;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%, -5%);
   background-color: #0dbcc0;
   padding: 10px;
@@ -167,8 +155,7 @@
   }
   #search_location .boxes .formBox .firstInput input {
     width: 100%;
-    padding: 10px 15px;
-    height: 50%;
+    padding: 10px 10px 10px 45px;
     border-radius: 10px;
     height: 55px;
     transform: translateX(-3px);
@@ -184,14 +171,14 @@
   }
   #search_location .boxes .formBox .secondInput input {
     width: 100%;
-    padding: 10px 15px;
+    padding: 10px 10px 10px 45px;
     border-radius: 10px;
     height: 55px;
   }
   #search_location .boxes .formBox .search {
     position: absolute;
     right: 19%;
-    top: 73%;
+    top: 55%;
     transform: translateY(-72%, -18%);
     background-color: #0dbcc0;
     padding: 10px;
@@ -233,17 +220,18 @@
   animation: myAni 3s ease-in-out infinite;
 }
 #doctor_categories .slider {
-  width: 95%;
   margin: 30px auto;
   height: 20vh;
   border: 1px solid red;
   position: relative;
+  top: 70%;
 }
 #doctor_categories .slider .next,
 #doctor_categories .slider .prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  transition: 0.5s ease-in-out;
 }
 #doctor_categories .slider .next i,
 #doctor_categories .slider .prev i {
@@ -253,48 +241,35 @@
   color: white;
   border-radius: 50%;
   padding: 1px;
+  transition: 0.3s ease-in-out;
+}
+#doctor_categories .slider .next i:hover,
+#doctor_categories .slider .prev i:hover {
+  background-color: white;
+  color: #0dbcc0;
+  border-radius: 50%;
+  padding: 1px;
 }
 #doctor_categories .slider .next.next,
 #doctor_categories .slider .prev.next {
-  right: 0px;
-  transition: 0.5s ease-in-out;
-}
-#doctor_categories .slider .next.next i,
-#doctor_categories .slider .prev.next i {
-  transition: 0.3s ease-in-out;
-}
-#doctor_categories .slider .next.next i:hover,
-#doctor_categories .slider .prev.next i:hover {
-  background-color: white;
-  color: #0dbcc0;
-  border-radius: 50%;
-  padding: 1px;
+  right: 5px;
 }
 #doctor_categories .slider .next.prev,
 #doctor_categories .slider .prev.prev {
-  left: 0;
-  transition: 0.5s ease-in-out;
+  left: 5px;
 }
-#doctor_categories .slider .next.prev i,
-#doctor_categories .slider .prev.prev i {
-  transition: 0.3s ease-in-out;
-}
-#doctor_categories .slider .next.prev i:hover,
-#doctor_categories .slider .prev.prev i:hover {
-  background-color: white;
-  color: #0dbcc0;
-  border-radius: 50%;
-  padding: 1px;
+#doctor_categories .slider:hover {
+  cursor: pointer;
 }
 #doctor_categories .slider:hover .next i,
 #doctor_categories .slider:hover .prev i {
   display: block;
 }
 #doctor_categories .slider:hover .prev {
-  left: -20px;
+  left: -2px;
 }
 #doctor_categories .slider:hover .next {
-  right: -20px;
+  right: -2px;
 }
 #doctor_categories .slider .sliderCategory {
   display: flex;
@@ -348,6 +323,7 @@
   position: absolute;
   bottom: 0;
   z-index: 9;
+  border-radius: 10px;
 }
 #certificate .boxes .imgBox .boy {
   right: 0;
@@ -376,10 +352,10 @@
 }
 @keyframes shape1Ani {
   0% {
-    left: 40px;
+    left: 10px;
   }
   100% {
-    left: 80px;
+    left: 30px;
   }
 }
 @keyframes shape2Ani {
@@ -431,20 +407,20 @@
   font-weight: 500;
 }
 #certificate .boxes .about-content .ulli ul li:hover i {
-  background-color: #0FBCC0;
+  background-color: #0fbcc0;
   color: white;
 }
 #certificate .boxes .about-content .ulli ul li i {
   transition: 0.5s ease-in-out;
-  background-color: #DAFAFC;
-  color: #7BD6D9;
+  background-color: #dafafc;
+  color: #7bd6d9;
   padding: 10px;
   margin: 20px 10px 0 0;
   border-radius: 50%;
 }
 #certificate .boxes .about-content a {
   text-decoration: none;
-  background-color: #0FBCC0;
+  background-color: #0fbcc0;
   padding: 18px 35px;
   border-radius: 10px;
   font-weight: 500;
@@ -454,5 +430,317 @@
   transition: 0.5s ease-in-out;
 }
 #certificate .boxes .about-content a:hover {
-  background-color: #0474B9;
+  background-color: #0474b9;
+}
+
+@media (max-width: 991px) {
+  #certificate {
+    padding: 50px;
+  }
+  #certificate .boxes .imgBox {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  #certificate .boxes .imgBox .girl {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+  }
+  #certificate .boxes .imgBox .boy {
+    right: 0;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 6;
+  }
+  #certificate .boxes .imgBox .shapeBox .shape1 {
+    top: -20%;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    animation: shape1Ani 3s linear infinite alternate;
+  }
+  #certificate .boxes .imgBox .shapeBox .shape2 {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    animation: shape2Ani 3s linear infinite alternate;
+  }
+  @keyframes shape1Ani {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 85px;
+    }
+  }
+  @keyframes shape2Ani {
+    0% {
+      top: 10%;
+    }
+    100% {
+      top: 30%;
+    }
+  }
+  #certificate .boxes .about-content {
+    padding-left: 5%;
+    margin-top: 30px;
+  }
+  #certificate .boxes .about-content h3 {
+    font-size: 35px;
+    color: #202647;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  #certificate .boxes .about-content .animation_line {
+    margin: 20px 0;
+    position: relative;
+    width: 100px;
+    background-color: #0fbcc0;
+    height: 5px;
+    border-radius: 5px;
+  }
+  #certificate .boxes .about-content .animation_line .whiteBox {
+    position: absolute;
+    background-color: white;
+    width: 5px;
+    height: 100%;
+    animation: myAni 3s ease-in-out infinite;
+  }
+  #certificate .boxes .about-content p {
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  #certificate .boxes .about-content .ulli ul {
+    margin: 0;
+    padding: 0;
+  }
+  #certificate .boxes .about-content .ulli ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #202647;
+    font-weight: 500;
+  }
+  #certificate .boxes .about-content .ulli ul li:hover i {
+    background-color: #0fbcc0;
+    color: white;
+  }
+  #certificate .boxes .about-content .ulli ul li i {
+    transition: 0.5s ease-in-out;
+    background-color: #dafafc;
+    color: #7bd6d9;
+    padding: 10px;
+    margin: 20px 10px 0 0;
+    border-radius: 50%;
+  }
+  #certificate .boxes .about-content a {
+    text-decoration: none;
+    background-color: #0fbcc0;
+    padding: 18px 35px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    display: inline-block;
+    margin-top: 30px;
+    transition: 0.5s ease-in-out;
+  }
+  #certificate .boxes .about-content a:hover {
+    background-color: #0474b9;
+  }
+}
+@media (max-width: 524px) {
+  #certificate {
+    padding: 50px;
+  }
+  #certificate .boxes .imgBox {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  #certificate .boxes .imgBox .girl {
+    left: 0;
+    max-width: 70%;
+    height: auto;
+    position: absolute;
+    bottom: 80px;
+    border-radius: 10px;
+    z-index: 9;
+  }
+  #certificate .boxes .imgBox .boy {
+    top: 0;
+    right: 0;
+    max-width: 70%;
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 6;
+  }
+  #certificate .boxes .imgBox .shapeBox .shape1 {
+    display: none;
+  }
+  #certificate .boxes .imgBox .shapeBox .shape2 {
+    display: none;
+  }
+  @keyframes shape1Ani {
+    0% {
+      left: 10px;
+    }
+    100% {
+      left: 30px;
+    }
+  }
+  @keyframes shape2Ani {
+    0% {
+      top: 20%;
+    }
+    100% {
+      top: 50%;
+    }
+  }
+  #certificate .boxes .about-content {
+    padding-left: 5%;
+    margin-top: 30px;
+  }
+  #certificate .boxes .about-content h3 {
+    font-size: 35px;
+    color: #202647;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  #certificate .boxes .about-content .animation_line {
+    margin: 20px 0;
+    position: relative;
+    width: 100px;
+    background-color: #0fbcc0;
+    height: 5px;
+    border-radius: 5px;
+  }
+  #certificate .boxes .about-content .animation_line .whiteBox {
+    position: absolute;
+    background-color: white;
+    width: 5px;
+    height: 100%;
+    animation: myAni 3s ease-in-out infinite;
+  }
+  #certificate .boxes .about-content p {
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  #certificate .boxes .about-content .ulli ul {
+    margin: 0;
+    padding: 0;
+  }
+  #certificate .boxes .about-content .ulli ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #202647;
+    font-weight: 500;
+  }
+  #certificate .boxes .about-content .ulli ul li:hover i {
+    background-color: #0fbcc0;
+    color: white;
+  }
+  #certificate .boxes .about-content .ulli ul li i {
+    transition: 0.5s ease-in-out;
+    background-color: #dafafc;
+    color: #7bd6d9;
+    padding: 10px;
+    margin: 20px 10px 0 0;
+    border-radius: 50%;
+  }
+  #certificate .boxes .about-content a {
+    text-decoration: none;
+    background-color: #0fbcc0;
+    padding: 18px 35px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    display: inline-block;
+    margin-top: 30px;
+    transition: 0.5s ease-in-out;
+  }
+  #certificate .boxes .about-content a:hover {
+    background-color: #0474b9;
+  }
+}
+#details {
+  background-image: url(https://templates.envytheme.com/mediva/default/assets/img/doctor-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  padding: 30px;
+  margin-top: 70px;
+}
+#details .headSection .section-title {
+  display: inline-block;
+  margin-top: 5%;
+  width: 75%;
+}
+#details .headSection .section-title .animation_line {
+  margin: 20px 0;
+  position: relative;
+  width: 100px;
+  background-color: #0fbcc0;
+  height: 5px;
+  border-radius: 5px;
+}
+#details .headSection .section-title .animation_line .whiteBox {
+  position: absolute;
+  background-color: white;
+  width: 5px;
+  height: 100%;
+  animation: myAni 3s ease-in-out infinite;
+}
+#details .headSection .section-title p {
+  width: 750px;
+  color: #6b6b84;
+}
+#details .headSection .section-title h3 {
+  font-size: 45px;
+  color: #202647;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+#details .headSection .aButton {
+  margin-top: 50%;
+}
+#details .headSection .aButton a {
+  text-decoration: none;
+  background-color: #0dbcc0;
+  color: white;
+  padding: 18px 35px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+}
+#details .headSection .aButton a:hover {
+  background-color: #0673b9;
+}
+#details .introduction {
+  border: 1px solid red;
+  position: relative;
+}
+#details .introduction .imgBox {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  border: 1px solid black;
+}
+#details .introduction .imgBox a img {
+  border: 1px solid blue;
 }/*# sourceMappingURL=style.css.map */
