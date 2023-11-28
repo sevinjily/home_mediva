@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @keyframes myAni {
   0% {
     left: 0;
@@ -682,9 +688,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 50%;
-  padding: 30px;
+  height: 30%;
+  position: relative;
   margin-top: 70px;
+}
+#details .headSection {
+  padding-bottom: 20px;
 }
 #details .headSection .section-title {
   display: inline-block;
@@ -732,15 +741,131 @@
   background-color: #0673b9;
 }
 #details .introduction {
-  border: 1px solid red;
+  text-align: center;
+  box-shadow: 0 0 20px 0 wrgb(209, 208, 208);
+  background-color: white;
+  height: 100vh;
   position: relative;
+  margin: 0 20px 20px auto;
+  width: 30%;
+  border-radius: 10px;
 }
 #details .introduction .imgBox {
+  border-radius: 5px;
+  box-shadow: 0 0 1.25rem rgba(166, 175, 188, 0.312);
+}
+#details .introduction .imgBox a {
   position: absolute;
-  width: 100%;
-  height: 90%;
-  border: 1px solid black;
+  left: 0;
+  top: 0;
+  margin: 20px;
 }
 #details .introduction .imgBox a img {
-  border: 1px solid blue;
+  border: 1px solid rgb(228, 220, 220);
+  width: 100%;
+}
+#details .introduction .imgBox a {
+  right: 0;
+  top: 0;
+}
+#details .introduction .imgBox a i {
+  position: absolute;
+  background-color: #d1ecf4;
+  padding: 15px;
+  border-radius: 50%;
+  color: #0dbcc0;
+  font-size: 25px;
+  right: 5px;
+  top: 5px;
+  transition: 0.4s ease-in;
+}
+#details .introduction .imgBox a i:hover {
+  background-color: #0dbcc0;
+  color: white;
+}
+#details .introduction .doctor-content .topBox {
+  position: absolute;
+  top: 62%;
+  left: 15px;
+  width: 100%;
+}
+#details .introduction .doctor-content .topBox .doctorName h3 a {
+  text-decoration: none;
+  color: #202647;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+#details .introduction .doctor-content .topBox .doctorName p {
+  font-size: 14px;
+  color: #202647;
+  font-weight: 500;
+}
+#details .introduction .doctor-content .topBox .doctorName .star {
+  padding: 0;
+}
+#details .introduction .doctor-content .topBox .doctorName .star li {
+  list-style: none;
+}
+#details .introduction .doctor-content .topBox .doctorName .star li i {
+  color: #f9c23e;
+  padding: 0 5px 5px 0;
+  font-size: 15px;
+}
+#details .introduction .doctor-content .topBox .doctorName .info {
+  padding: 0;
+}
+#details .introduction .doctor-content .topBox .doctorName .info li {
+  list-style: none;
+  font-size: 14px;
+  color: #202647;
+  font-weight: 500;
+}
+#details .introduction .doctor-content .topBox .doctorName .info li i {
+  color: #0dbcc0;
+  padding: 0 10px 10px 0;
+  font-size: 15px;
+  left: 0;
+}
+#details .introduction .doctor-content .topBox .doctorButton {
+  width: 50%;
+}
+#details .introduction .doctor-content .topBox .doctorButton a {
+  right: 30px;
+  position: absolute;
+  text-decoration: none;
+  background-color: #0fbcc0;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+}
+#details .introduction .doctor-content .topBox .doctorButton a:hover {
+  background-color: #0474b9;
+}
+#details .introduction .doctor-content .doctor-btn {
+  position: absolute;
+  bottom: 15px;
+  margin-top: 20px;
+}
+#details .introduction .doctor-content .doctor-btn a {
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 15px;
+  margin: 0 10px 0 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #0fbcc0;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+}
+#details .introduction .doctor-content .doctor-btn a:first-child {
+  background-color: #34bed8;
+}
+#details .introduction .doctor-content .doctor-btn a:hover {
+  background-color: #0474b9;
+}
+#details .introduction .doctor-content .doctor-btn a:hover:first-child {
+  background-color: #0fbcc0;
 }/*# sourceMappingURL=style.css.map */

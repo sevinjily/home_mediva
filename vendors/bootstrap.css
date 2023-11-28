@@ -564,7 +564,7 @@ progress {
   content: "— ";
 }
 
-.img-fluid {
+.d {
   max-width: 100%;
   height: auto;
 }
